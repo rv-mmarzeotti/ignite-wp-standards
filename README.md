@@ -206,11 +206,11 @@ In a recent edit on FurnaceCompare.com, the dev team was tasked with adding a bo
 
 [BEM](http://getbem.com/) should be used for all style classes in markup. The idea here is that we can be specific, while still being able to override wherever we might need to.
 
-A *BLOCK* is anything that would be styled as its own individual thing. Maybe it can appear in multiple areas with similar styles like a post, or it might be a full section like a latest posts or resources section on the home page.
+A **BLOCK** is anything that would be styled as its own individual thing. Maybe it can appear in multiple areas with similar styles like a post, or it might be a full section like a latest posts or resources section on the home page.
 
-An *ELEMENT* is anything that might be used to make up a block. A post block might be made up of a title, image, category, content, and a link element. It might have more or it might have less. The elements that make it up might depend on where it is being displayed.
+An **ELEMENT** is anything that might be used to make up a block. A post block might be made up of a title, image, category, content, and a link element. It might have more or it might have less. The elements that make it up might depend on where it is being displayed.
 
-A *MODIFIER* is used when a block is similar to its base set of styles, but has some slight differences. It can be applied to a block or an element to modify the entire block or just a small piece of it.
+A **MODIFIER** is used when a block is similar to its base set of styles, but has some slight differences. It can be applied to a block or an element to modify the entire block or just a small piece of it.
 
 Thinking about elements in this manner will allow us to move or reuse things throughout the site with relatively low lift. If we have a blog page, and then we want to add a sidebar that contains recent posts, we can reuse the markup, maybe remove anything we do not want to use like the category or the excerpt, and possibly only need to add a modifier to the post block to override font sizes. That modified style could and might in turn be used anywhere else we want that smaller implementation, therefore the modifier probably shouldnt be --sidebar, but maybe --small or --simple.
 
@@ -313,7 +313,7 @@ The resources block is likely pretty specific, but the module can easily be used
 }
 ```
 
-In terms of general naming standards, all class names should be as generic as possible. There should be consistency in element names as well. One block should not use __heading while another uses __title without good reason. If a post block has 2 different title styles, it should use a modifier rather than a different element name. It could be argued that a section has a heading, but a post has a title.
+In terms of general naming standards, all class names should be as generic as possible. There should be consistency in element names as well. One block should not use `__heading` while another uses `__title` without good reason. If a post block has 2 different title styles, it should use a modifier rather than a different element name. It could be argued that a section has a heading, but a post has a title.
 
 ## Repeatable Components
 
@@ -325,7 +325,7 @@ In the example above, the intro section, `resources__intro`, might be similar to
 
 #### components/_intro.scss
 
-Intro styles across any section (class name that ends in "__intro").
+Intro styles across any section (class name that ends in `__intro`).
 
 ```scss
 [class$="__intro"] {
