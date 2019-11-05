@@ -10,7 +10,7 @@ This repo uses `tabs` instead of `spaces`. Tabs are set to the size of 4 spaces.
 
 When working with HTML in a PHP document, the HTML should be formatted as such whenever possible.
 
-Good:
+#### Good
 
 ```PHP
 <?php
@@ -19,7 +19,7 @@ if ( is_author() ) { ?>
 <?php } ?>
 ```
 
-Bad:
+#### Bad
 
 ```PHP
 <?php
@@ -30,7 +30,7 @@ if ( is_author() ) {
 
 PHP should be properly spaced based on the WordPress coding standards.
 
-Good:
+#### Good
 
 ```PHP
 <?php
@@ -48,7 +48,7 @@ if ( ! empty( $author_id ) && ! empty( $author ) ) { ?>
 <?php } ?>
 ```
 
-Bad:
+#### Bad
 
 ```PHP
 <?php
@@ -68,7 +68,7 @@ if (!empty($author_id) && !empty($author)) { ?>
 
 PHP functions and variables should be spelled out and underscore separated.
 
-Good:
+#### Good
 
 ```PHP
 <?php
@@ -81,7 +81,7 @@ function get_author_name( $author_id ) {
 ?>
 ```
 
-Bad:
+#### Bad
 
 ```PHP
 <?php
@@ -108,7 +108,7 @@ SCSS should always use single quotes unless double quotes are explicitly necessa
 
 Vertical spacing should be used to separate sets of attributes.
 
-Good:
+#### Good
 
 ```SCSS
 .class {
@@ -120,7 +120,7 @@ Good:
 }
 ```
 
-Bad:
+#### Bad
 
 ```SCSS
 .class {
@@ -133,7 +133,7 @@ Bad:
 
 Media queries should be spcified on the item they modify and should not nest items. The media query should be the very first nested item outside of individual attributes.
 
-Good:
+#### Good
 
 ```SCSS
 .class {
@@ -153,7 +153,7 @@ Good:
 }
 ```
 
-Bad:
+#### Bad
 
 ```SCSS
 .class {
